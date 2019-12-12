@@ -10,8 +10,8 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-emaildict = {'jahin': 'jahincse14@gmail.com','munim':'munimhossain411@gmail.com',
-             'imran':'ik21.cse14@gmail.com','nadim':'d.m.n.hayder@gmail.com'}
+emaildict = {'dog': 'jahincse14@gmail.com','moon':'munimhossain411@gmail.com','neela':'surayanila7254@gmail.com',
+             'imran':'ik21.cse14@gmail.com','dick':'d.m.n.hayder@gmail.com'}
 
 engine =pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -135,12 +135,12 @@ if __name__ == "__main__":
                     message = takeCommand()
                     email = 'rakibulr312@gmail.com'
                     password = '01791742746'
-                    to_mail = emaildict[to_mail]
+                    to_mail = emaildict[to_maile]
                     subject = 'this is subject'
                     sendmail(email, password, to_mail, subject, message)
                     speak('Email has been send')
                 except Exception as e:
-                    print('Sorry! i cant send him email Now Please tru again') 
-                    speak('Sorry! i cant send him email Now Please tru again') 
+                    print('Sorry! i cant send him email Now Please tru again')
+                    speak('Sorry! i cant send him email Now Please tru again')
             else:
-                print('Sorry! I dont have {}"s email address. please try again sir!'.format(to_maile)) 
+                print('Sorry! I dont have {}"s email address. please try again sir!'.format(to_maile))
